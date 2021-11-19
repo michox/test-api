@@ -1,0 +1,13 @@
+modules:
+  jira:adminPage:
+    - key: test-api-hello-world-admin-page
+      function: main
+      title: test-api
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: ari:cloud:ecosystem::app/28d8ffa6-6f53-430a-953b-d28c407fc299
+permissions:
+  scopes: 
+    - manage:jira-project
