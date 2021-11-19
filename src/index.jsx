@@ -1,11 +1,11 @@
-import ForgeUI, { render, AdminPage, Fragment, Text } from "@forge/ui";
+import ForgeUI, { render, AdminPage, Fragment, Text, useAction, Button } from "@forge/ui";
 import api, { route } from "@forge/api";
 
 const App = () => {
-  myFunc();
   return (
     <Fragment>
       <Text>Hello world!</Text>
+      <Button text="test" onClick={async () => {await myFunc();}}/>
     </Fragment>
   );
 };
@@ -35,5 +35,6 @@ async function myFunc() {
     });
 
   console.log(`Response: ${response.status} ${response.statusText}`);
-  console.log(await response.json());
+  console.log(response);
+  return 0;
 }

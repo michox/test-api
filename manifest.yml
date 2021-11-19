@@ -10,4 +10,7 @@ app:
   id: ari:cloud:ecosystem::app/28d8ffa6-6f53-430a-953b-d28c407fc299
 permissions:
   scopes: 
-    - manage:jira-project
+    - manage:jira-configuration
+    - manage:jira-project	
+    - read:jira-work
+    
